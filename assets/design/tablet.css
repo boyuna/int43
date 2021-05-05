@@ -1,0 +1,821 @@
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .header {
+    height: 400px;
+    background: url(images/header_bg.webp) no-repeat top right;
+    background-size: cover;
+  }
+  
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 200px 70px 220px;
+    justify-items: center;
+    grid-template-areas:
+      'logotype . request-a-call'
+      'promotional-offer promotional-offer promotional-offer'
+      '. compose-a-letter .'
+      'advantages advantages advantages';
+  }
+  
+  .promotional-offer {
+    width: 290px;
+  }
+  
+  .promotional-offer i {
+    font-size: .9em;
+  }
+  
+  .advantages {
+    display: none;
+  }
+  
+  .content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 810px 550px 1190px 0px 1050px 1300px;
+    justify-items: center;
+    grid-template-areas:
+      'pr_text pr_text pr_text pr_text'  
+      'sl-furniture_samples sl-furniture_samples sl-furniture_samples sl-furniture_samples'
+      'tab-container tab-container tab-container tab-container'
+      'progress_in_order progress_in_order progress_in_order progress_in_order'
+      'responses responses responses responses'
+      'feedback feedback feedback feedback';
+  }
+
+  .pr_text p {
+    font: 1.3em 'FuturaBookCTT', Helvetica;
+    line-height: 1.6em;
+  }
+  
+  .pr_text h2 {
+    font: bold 26px 'a_CooperBlackNr', sans-serif;
+    line-height: 100px;
+    padding-top: 25px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+  }
+  
+  .sl-fs_container h4 {
+    width: 100%;
+    font-size: .7em;
+    padding-right: 100px !important;
+    text-align: center;
+  }
+
+  .sl-furniture_samples, ul {
+    height: 340px;
+  }
+
+  .sl-furniture_samples {
+    width: 400px;
+  }
+ 
+  .sl-furniture_samples li {
+    width: 400px;
+  }
+  
+  @-webkit-keyframes slide-animation {
+    0% {opacity:0;}
+    2% {opacity:1;}
+    20% {left:0px; opacity:1;}
+    22.5% {opacity:0.6;}
+    25% {left:-100%; opacity:1;}
+    45% {left:-100%; opacity:1;}
+    47.5% {opacity:0.6;}
+    50% {left:-200%; opacity:1;}
+    70% {left:-200%; opacity:1;}
+    72.5% {opacity:0.6;}
+    75% {left:-300%; opacity:1;}
+    95% {opacity:1;}
+    98% {left:-300%; opacity:0;} 
+    100% {left:0px; opacity:0;}
+  }
+
+  .sl-fs_container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .types-of-furniture {
+    font: bold 23px 'a_CooperBlackNr', sans-serif;
+    margin-top: -60px;
+  }
+
+  .tab-container {
+    width: 100%;
+    height: 1200px;
+    margin: 0px auto;
+    font-size: 1.6em;
+    padding: 0;
+  }
+  
+  .tabs h2 {
+    font-size: .9em;
+    color: indianred;
+  }
+  
+  .tabs p {
+    font-size: 19px;
+  }
+  
+  .tab-container li {
+    font-size: 19px;
+  }
+  
+  .tabs {
+    perspective: 600px;
+  }
+  .tabs > div {
+    padding: 0;
+  }
+
+  .progress_in_order {
+    display: none;
+  }
+
+  .responses h2 {
+    font-size: 23px;
+  }
+
+  article {
+    height: 470px;
+  }
+
+  article p {
+    font-size: 19px;
+    margin: 30px 10px 50px 10px;
+  }
+
+  .info h3 {
+    font-size: 21px;
+    margin: 30px 40px;
+  }
+
+  .address {
+    font-size: 20px;
+    margin: 40px;
+    margin-bottom: 10px;
+  }
+
+  .feedback h2 {
+    font-size: 26px;
+    margin: 80px 0 20px;
+  }
+  
+  .feedback p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  textarea {
+    width: 300px;
+    height: 350px;
+    margin-left: 10px;
+  }
+
+  input:not(.form-btn) {
+    margin-left: 10px;
+    width: 300px;
+  }
+
+  .inner-form {
+    column-count: 1;
+  }
+  
+  .form-btn {
+  width: 180px;
+  height: 61px;
+  margin: 70px 70px 40px;
+  }
+  
+  .rt1 {
+    font-size: 18px;
+  }
+  
+  #footer {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 135px;
+  grid-template-areas:
+    'contacts contacts contacts';
+}
+  
+  .footer-wrp {
+    display: none;
+    width: 0;
+  }
+  
+  .contacts {
+    width: 100%;
+  }
+  
+  .contacts span:not(.c_icon) {
+    display: none;
+  }
+  
+  .contacts i,
+  .contacts a {
+    font-size: 1em;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  #e-mail {
+    font-size: .7em;
+  }
+  
+  #vk,
+  .vk_img {
+    display: none;
+  }
+  
+  
+}  
+ 
+ @media screen and (min-width: 415px) and (max-width: 599px) {
+ 
+  body {
+    overflow-x: hidden;
+  }
+  
+  .header {
+    height: 400px;
+    background: url(images/header_bg.webp) no-repeat top right;
+    background-size: cover;
+  }
+  
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 200px 70px 220px;
+    justify-items: center;
+    grid-template-areas:
+      'logotype . request-a-call'
+      'promotional-offer promotional-offer promotional-offer'
+      '. compose-a-letter .'
+      'advantages advantages advantages';
+  }
+  
+  .logotype {
+    padding: 40px 5px;
+  }
+  
+  .logotype__img {
+    width: 119px;
+    margin-left: -80px;
+  }
+  
+  .logotype__text {
+    display: none;
+  }
+  
+  .promotional-offer {
+    width: 350px;
+  }
+  
+  .promotional-offer i {
+    font-size: 1em;
+  }
+  
+  .advantages {
+    display: none;
+  }
+  
+  .content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 700px 660px 1190px 0px 1050px 1300px;
+    justify-items: center;
+    grid-template-areas:
+      'pr_text pr_text pr_text pr_text'  
+      'sl-furniture_samples sl-furniture_samples sl-furniture_samples sl-furniture_samples'
+      'tab-container tab-container tab-container tab-container'
+      'progress_in_order progress_in_order progress_in_order progress_in_order'
+      'responses responses responses responses'
+      'feedback feedback feedback feedback';
+  }
+
+  .pr_text p {
+    font: 1.3em 'FuturaBookCTT', Helvetica;
+    line-height: 1.6em;
+  }
+  
+  .pr_text h2 {
+    font: bold 26px 'a_CooperBlackNr', sans-serif;
+    line-height: 100px;
+    padding-top: 25px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+  }
+  
+  .sl-fs_container h4 {
+    width: 100%;
+    font-size: .7em;
+    padding-right: 100px !important;
+    text-align: center;
+  }
+
+  .sl-furniture_samples, ul {
+    height: 434px;
+  }
+
+  .sl-furniture_samples {
+    width: 510px;
+  }
+ 
+  .sl-furniture_samples li {
+    width: 510px;
+  }
+  
+  @-webkit-keyframes slide-animation {
+    0% {opacity:0;}
+    2% {opacity:1;}
+    20% {left:0px; opacity:1;}
+    22.5% {opacity:0.6;}
+    25% {left:-100%; opacity:1;}
+    45% {left:-100%; opacity:1;}
+    47.5% {opacity:0.6;}
+    50% {left:-200%; opacity:1;}
+    70% {left:-200%; opacity:1;}
+    72.5% {opacity:0.6;}
+    75% {left:-300%; opacity:1;}
+    95% {opacity:1;}
+    98% {left:-300%; opacity:0;} 
+    100% {left:0px; opacity:0;}
+  }
+
+  .sl-fs_container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .types-of-furniture {
+    font: bold 23px 'a_CooperBlackNr', sans-serif;
+    margin-top: -60px;
+  }
+
+  .tab-container {
+    width: 100%;
+    height: 1200px;
+    margin: 0px auto;
+    font-size: 1.6em;
+    padding: 0;
+  }
+  
+  .tabs h2 {
+    font-size: .9em;
+    color: indianred;
+  }
+  
+  .tabs p {
+    font-size: 19px;
+  }
+  
+  .tab-container li {
+    font-size: 19px;
+  }
+  
+  .tabs {
+    perspective: 600px;
+  }
+  .tabs > div {
+    padding: 0;
+  }
+
+  .progress_in_order {
+    display: none;
+  }
+
+  .responses h2 {
+    font-size: 23px;
+  }
+
+  article {
+    height: 470px;
+  }
+
+  article p {
+    font-size: 19px;
+    margin: 30px 10px 50px 10px;
+  }
+
+  .info h3 {
+    font-size: 21px;
+    margin: 30px 40px;
+  }
+
+  .address {
+    font-size: 20px;
+    margin: 40px;
+    margin-bottom: 10px;
+  }
+
+  .feedback h2 {
+    font-size: 26px;
+    margin: 80px 0 20px;
+  }
+  
+  .feedback p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  textarea {
+    width: 400px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  input:not(.form-btn) {
+    margin-left: 10px;
+    width: 400px;
+  }
+
+  .inner-form {
+    column-count: 1;
+  }
+  
+  .form-btn {
+  width: 180px;
+  height: 61px;
+  margin: 70px 70px 40px;
+  }
+  
+  .rt1 {
+    font-size: 18px;
+  }
+  
+  .copyright {
+    display: none;
+    width: 0;
+  }
+  
+  .contacts span {
+    display: none;
+  }
+  
+  .contacts i,
+  .contacts a {
+    font-size: .8em;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+ }
+ 
+ @media screen and (max-width: 550px) {
+   
+  .logotype {
+    display: none;
+  }
+ }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+    .header {
+    height: 480px;
+    background: url(images/header_bg.webp) no-repeat top right;
+    background-size: cover;
+  }
+  
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 150px 70px 220px;
+    justify-items: center;
+    grid-template-areas:
+      'logotype . request-a-call'
+      'promotional-offer promotional-offer promotional-offer'
+      '. compose-a-letter .'
+      'advantages advantages advantages';
+  }
+  
+  .logotype {
+    padding: 40px 5px;
+  }
+  
+  .logotype__img {
+    width: 119px;
+    margin-left: -80px;
+  }
+  
+  .logotype__text {
+    display: none;
+  }
+  
+  .promotional-offer {
+    grid-area: promotional-offer;
+    width: 350px;
+  }
+  
+   .advantages h3 {
+     display: none;
+  }
+  
+  .advantages__item {
+    font-size: 1.1em;
+  }
+  
+  .advantages img {
+    display: none;
+  }
+  
+  .pr_text p {
+    font-size: 1.6em;
+  }
+  
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 950px 800px 1250px 600px 900px 1280px;
+    justify-items: center;
+    grid-template-areas:
+      'pr_text pr_text pr_text pr_text'  
+      'sl-furniture_samples sl-furniture_samples sl-furniture_samples sl-furniture_samples'
+      'tab-container tab-container tab-container tab-container'
+      'progress_in_order progress_in_order progress_in_order progress_in_order'
+      'responses responses responses responses'
+      'feedback feedback feedback feedback';
+    }
+    
+  .sl-fs_container h4 {
+    width: 100%;
+    font-size: .7em;
+    padding-right: 110px !important;
+    text-align: center;
+  }
+
+  .sl-furniture_samples, ul {
+    height: 638px;
+  }
+
+  .sl-furniture_samples {
+    width: 750px;
+  }
+ 
+  .sl-furniture_samples li {
+    width: 750px;
+  }
+ 
+  @-webkit-keyframes slide-animation {
+    0% {opacity:0;}
+    2% {opacity:1;}
+    20% {left:0px; opacity:1;}
+    22.5% {opacity:0.6;}
+    25% {left:-100%; opacity:1;}
+    45% {left:-100%; opacity:1;}
+    47.5% {opacity:0.6;}
+    50% {left:-200%; opacity:1;}
+    70% {left:-200%; opacity:1;}
+    72.5% {opacity:0.6;}
+    75% {left:-300%; opacity:1;}
+    95% {opacity:1;}
+    98% {left:-300%; opacity:0;} 
+    100% {left:0px; opacity:0;}
+  }
+
+  .sl-fs_container img {
+    width: 100%;
+  }
+  
+  .tab-container i {
+    font-size: .7em;
+  }
+  
+  .tabs p {
+     font-size: .85em;
+  }
+  
+  .tabs h2 {
+    color: indianred;
+  }
+  
+  .pio-text {
+    font-size: 16px;
+  }
+  
+  article {
+    width: 100%;
+    height: 390px;
+    margin-bottom: 40px;
+  }
+  
+  article p {
+    font-size: 20px;
+  }
+
+  textarea {
+    margin-left: 50px;
+    width: 500px;
+    height: 350px;
+  }
+
+  input:not(.form-btn) {
+    margin-left: 50px;
+    width: 500px;
+  }
+
+  .inner-form {
+    column-count: 1;
+  }
+  
+  .copyright p {
+    font-size: .69em;
+  }
+  
+  .contacts a {
+    font-size: .9rem;
+  }
+  
+  .contacts i {
+    font-size: .9rem;
+    margin: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .contacts__text {
+    display: none;
+  }
+  
+  .phone_img,
+  .email_img,
+  .vk_img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 899px) {
+  
+  .header {
+    background: url(images/header_bg.webp) no-repeat top right;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+
+  .header {
+    background: url(images/header_bg.webp) no-repeat top right;
+    background-size: cover;
+  }
+  
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 190px 200px 100px 220px;
+  }
+  
+  .logotype__img,
+  .logotype__text {
+    width: 80%;
+  }
+  
+  .advantages__item {
+    font: 1.5em 'FuturaBookCTT';
+    line-height: 30px;
+  }
+
+  .advantages img {
+    width: 82px;
+    height: 82px;
+  }
+  
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 700px 1100px 1150px 600px 900px 1280px;
+    justify-items: center;
+    grid-template-areas:
+      'pr_text pr_text pr_text pr_text'  
+      'sl-furniture_samples sl-furniture_samples sl-furniture_samples sl-furniture_samples'
+      'tab-container tab-container tab-container tab-container'
+      'progress_in_order progress_in_order progress_in_order progress_in_order'
+      'responses responses responses responses'
+      'feedback feedback feedback feedback';
+    }
+
+  .sl-furniture_samples, ul {
+    height: 863px;
+  }
+  
+  .sl-fs_container h4 {
+    width: 100%;
+    font-size: .9em;
+    padding-right: 110px !important;
+    text-align: center;
+  }
+
+  .sl-furniture_samples {
+    width: 1150px;
+  }
+ 
+  .sl-furniture_samples li {
+    width: 1150px;
+  }
+ 
+  @-webkit-keyframes slide-animation {
+    0% {opacity:0;}
+    2% {opacity:1;}
+    20% {left:0px; opacity:1;}
+    22.5% {opacity:0.6;}
+    25% {left:-100%; opacity:1;}
+    45% {left:-100%; opacity:1;}
+    47.5% {opacity:0.6;}
+    50% {left:-200%; opacity:1;}
+    70% {left:-200%; opacity:1;}
+    72.5% {opacity:0.6;}
+    75% {left:-300%; opacity:1;}
+    95% {opacity:1;}
+    98% {left:-300%; opacity:0;} 
+    100% {left:0px; opacity:0;}
+  }
+
+  .sl-fs_container img {
+    width: 100%;
+  }
+
+  .tabs h2 {
+    display: none;
+  }
+  
+  .feedback p {
+    margin: 70px;
+  }
+  
+  textarea {
+    margin-left: 100px;
+    width: 600px;
+    height: 350px;
+  }
+
+  input:not(.form-btn) {
+    margin-left: 100px;
+    width: 500px;
+  }
+
+  .inner-form {
+    column-count: 1;
+  }
+
+  .copyright p {
+    font-size: .69em;
+  }
+  
+  .contacts a {
+    font-size: .9rem;
+    padding-left: 5px;
+  }
+  
+  .contacts i {
+    font-size: .9rem;
+    margin: 0 !important;
+    padding-left: 5px !important;
+  }
+  
+  .vk_img {
+    font: bold 12px Carlito;
+    color: lightblue !important;
+  }
+  
+  .contacts__text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  
+  .phone_img,
+  .email_img,
+  .vk_img {
+    display: none;
+  }
+  
+  
+  .tabs h2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+} 
+
+@media screen and (min-width: 1800px) {
+
+} 
